@@ -1,3 +1,4 @@
-*.pkl
+grid_search_result.pkl
 house-prediction-dataset.csv
 kc_house_data.csv
+regresi_linear_model.pkl
