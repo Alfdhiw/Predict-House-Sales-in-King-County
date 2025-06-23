@@ -36,10 +36,10 @@ features = np.array([[bedrooms, bathrooms, sqft_living, sqft_lot, floors, waterf
                       lat, long, sqft_living15, sqft_lot15]])
 
 # Scaling input seperti pada model
-scaler = StandardScaler()
+scaler = joblib.load("scaler.pkl")
 # Anda sebaiknya menggunakan scaler yang sama dari training, namun jika tidak tersedia:
 # Untuk keperluan demo ini, akan diskalakan ulang berdasar input (bisa tidak akurat)
-features_scaled = scaler.fit_transform(features)
+features_scaled = scaler.transform(features)
 
 if st.button("Prediksi Harga"):
     predicted_price = model.predict(features_scaled)[0]
