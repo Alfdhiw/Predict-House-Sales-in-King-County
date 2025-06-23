@@ -1,0 +1,4 @@
+Feature: sqft_living, Importance: 0.3328
+Feature: lat, Importance: 0.2101
+Feature: grade, Importance: 0.3348
+Feature: long, Importance: 0.1223
