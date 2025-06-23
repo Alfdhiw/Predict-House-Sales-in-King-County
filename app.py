@@ -39,8 +39,6 @@ features = np.array([[bedrooms, bathrooms, sqft_living, sqft_lot, floors, waterf
 scaler = joblib.load("scaler.pkl")
 # Anda sebaiknya menggunakan scaler yang sama dari training, namun jika tidak tersedia:
 # Untuk keperluan demo ini, akan diskalakan ulang berdasar input (bisa tidak akurat)
-st.write("Shape input fitur:", features.shape)
-st.write("Scaler expects:", scaler.n_features_in_)
 features_scaled = scaler.transform(features)
 
 if st.button("Prediksi Harga"):
