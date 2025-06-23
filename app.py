@@ -29,12 +29,11 @@ long = st.number_input("Longitude", value=-122.2)
 sqft_living15 = st.number_input("Luas rata-rata rumah tetangga (sqft_living15)", min_value=100, max_value=10000, value=2000)
 sqft_lot = st.number_input("Luas tanah (sqft_lot)", min_value=500, max_value=100000, value=5000)
 sqft_lot15 = st.number_input("Luas tanah tetangga (sqft_lot15)", min_value=500, max_value=100000, value=5000)
-zipcode = st.number_input("Kode pos (zipcode)", min_value=100, max_value=100000, value=98178)
 
 # Gabungkan input ke array
 features = np.array([[bedrooms, bathrooms, sqft_living, sqft_lot, floors, waterfront, view,
                       condition, grade, sqft_above, sqft_basement, yr_built, yr_renovated,
-                      lat, long, sqft_living15, sqft_lot15, zipcode]])
+                      lat, long, sqft_living15, sqft_lot15]])
 
 # Scaling input seperti pada model
 scaler = joblib.load("scaler.pkl")
