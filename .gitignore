@@ -1,7 +1,5 @@
-grid_search_result.pkl
 house-prediction-dataset.csv
 kc_house_data.csv
 regresi_linear_model.pkl
 Prediksi_Harga_Rumah_dengan_Regresi_Linear_v2.ipynb
 Prediksi_Kedua.ipynb
-best_random_forest_model.pkl
