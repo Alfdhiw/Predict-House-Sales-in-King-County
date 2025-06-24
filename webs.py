@@ -22,4 +22,4 @@ if st.button("Prediksi Harga"):
     input_scaled = scaler.transform(input_data)
     pred_price = model.predict(input_scaled)[0]
 
-    st.success(f"Perkiraan Harga Rumah: **Rp {pred_price:,.0f}**")
+    st.success(f"Perkiraan Harga Rumah: **$ {pred_price:,.0f}**")
